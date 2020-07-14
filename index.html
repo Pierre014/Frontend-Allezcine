@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="AllezCine is a project from Stéphane Léonard and Pierre Lorand during BeCode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>AllezCine</title>
+</head>
+
+<body>
+    <header>
+        <nav id='myNav' class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+            <a class="navbar-brand" href="#">
+                <span class="text-danger">ALLEZ</span>
+                <span class="text-white">CINE!</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-danger" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movie">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured">Featured Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop-section">Shop Movie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input id="nav-search" class="form-control" type="text" placeholder="Recherche">
+                </form>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div id="car-1" class="carousel-item active">
+                        <!-- <img src="./assets/img/hero.jpg" class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h5 class="justify-content-center"><span>LATEST </span><span
+                                    class="text-danger">ON</span><span>LINE </span><span
+                                    class="text-danger">MO</span><span>VIES</span></h5>
+                            <p id='tagline-1'>...</p>
+                            <a id='car-btn-1' class="btn btn-danger" href="#" target="_blank" role="button">Watch trailer</a>
+                        </div>
+                    </div>
+                    <div id="car-2" class="carousel-item">
+                        <!-- <img src="./assets/img/hero2.jpg" class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h5><span>LATEST </span><span class="text-danger">ON</span><span>LINE </span><span
+                                    class="text-danger">MO</span><span>VIES</span></h5>
+                            <p id='tagline-2'>...</p>
+                            <a id='car-btn-2' class="btn btn-danger" href="#" target="_blank" role="button">Watch trailer</a>
+                        </div>
+                    </div>
+                    <div id="car-3" class="carousel-item">
+                        <!-- <img src="./assets/img/hero.jpg" class="d-block w-100" alt="..."> -->
+                        <div class="carousel-caption d-md-block">
+                            <h5 class="justify-content-center"><span>LATEST </span><span
+                                    class="text-danger">ON</span><span>LINE </span><span
+                                    class="text-danger">MO</span><span>VIES</span></h5>
+                            <p id='tagline-3'>...</p>
+                            <a id='car-btn-3' class="btn btn-danger" href="#" target="_blank" role="button">Watch trailer</a>
+                            <!-- <button type="button" class="btn btn-danger">Watch trailer</button> -->
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="login-bar" class="bg-danger">
+                <p id="phoneNumber"><a href="#">+123 456 689</a></p>
+                <button id="login"> login</button>
+                <button id="register">register</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="left-socials">
+            <div id="Twitter">
+
+                <input type="checkbox" id="toggle" class="visually-hidden">
+                <label for="toggle">
+                    Twitter
+                    <i id="twit" class="fab fa-twitter rounded-circle"></i>
+                </label>
+
+            </div>
+
+            <div id="Facebook">
+
+                <input type="checkbox" id="toggle2" class="visually-hidden">
+                <label for="toggle2">
+                    Facebook
+                    <i id="faceb" class="fab fa-facebook-f rounded-circle"></i>
+                </label>
+
+            </div>
+
+            <div id="Dribble">
+
+                <input type="checkbox" id="toggle3" class="visually-hidden">
+                <label for="toggle3">
+                    Dribble
+                    <i id="dribl" class="fas fa-basketball-ball"></i>
+                </label>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div id="movie" class="row">
+
+            </div>
+        </div>
+        <div class="container">
+            <section id='featured' class="featured">
+                <h2>FEATURED MOVIES</h2>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="btn-all" checked> All
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="btn-action"> Action
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="btn-crime"> Crime
+                    </label>
+                </div>
+                <div id='featuredRow' class="row">
+
+                </div>
+                <button id='moreOrLess' type="button" class="btn btn-danger center">More</button>
+            </section>
+        </div>
+        <section id='shop-section' class="shop">
+            <div class="container">
+                <h2>SHOP</h2>
+            </div>
+            <div id="switch-btn">
+                <button id='goBack' type="button" class="btn btn-secondary btn-sm">
+                    &lt; </button>
+                <button id='goNext' type="button" class="btn btn-secondary btn-sm">></button>
+            </div>
+            <div id='shop-row' class="row">
+                <div id='shop-movies' class="col-12 col-lg-6 col-md-12 col-sm-12">
+                    <div id='shop-movies-row' class="row">
+
+                    </div>
+
+                </div>
+                <div id='shop-movie' class="col-12 col-lg-6 col-md-12 col-sm-12">
+                    <div class="video-container">
+                        <iframe id='videoIframe' title="Movie trailer" src="https://www.youtube.com/embed/GLPJSmUHZvU"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="container movie-info-block">
+                        <h3 id='shop-film-title'>FROZEN 2</h3>
+                        <div class="row">
+                            <h4 class="col-12 col-md-4 left-title">Storyline :</h4>
+                            <p class='col-12 col-md-8' id='shop-film-stotyline'>frozen Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Nam
+                                qui provident,
+                                optio ducimus ipsa consequuntur perferendis architecto unde non neque atque?
+                                Molestiae ipsum repudiandae nulla rerum aliquid impedit ut iure.</p>
+                        </div>
+
+                        <div class="row">
+                            <h4 class="col-12 col-md-4 left-title">Released on :</h4>
+                            <p class='col-12 col-md-8' id='shop-film-date'> 2019-12_01</p>
+                        </div>
+                        <div class="row">
+                            <h4 class="col-12 col-md-4 left-title">Genre :</h4>
+                            <p class="col-12 col-md-8" id='shop-film-genre'> Drama | Action | Disney</p>
+                        </div>
+                        <div class="row">
+                            <h4 class="col-12 col-md-4 left-title">Price :</h4>
+                            <p class="col-12 col-md-8 right-text"> 15 $</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <div id='contact-section' class="container">
+            <section class="contact">
+                <h2>CONTACT US</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input id="firstName" type="text" class="form-control mb-2 mr-2" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input id="lastName" type="text" class="form-control mb-2" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input id="emailContact" type="text" class="form-control mb-2 mr-2"
+                                placeholder="email@gmail.com">
+                        </div>
+                        <div class="col">
+                            <input id="subject" type="text" class="form-control mb-2" placeholder="subject">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <textarea id="textMessage" name="area" class="form-control mt-2" rows="10"
+                                placeholder="Your message"></textarea>
+                            <button class="btn btn-danger mb-5" type="button" id="sendMessage">SEND MESSAGE</button>
+                        </div>
+
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Call to action -->
+
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                    <input id="nav-search-footer" class="form-control" type="text" placeholder="Enter your email">
+                </li>
+                <li class="list-inline-item">
+                    <a id="subscribe" class="btn btn-danger btn-rounded">SUBSCRIBE</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">RELEASE</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">2020</a>
+                        </li>
+                        <li>
+                            <a href="#!">2019</a>
+                        </li>
+                        <li>
+                            <a href="#!">2018</a>
+                        </li>
+                        <li>
+                            <a href="#!">2017</a>
+                        </li>
+                        <li>
+                            <a href="#!">2016</a>
+                        </li>
+                        <li>
+                            <a href="#!">2015</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">MOVIES</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">ADVENTURE</a>
+                        </li>
+                        <li>
+                            <a href="#!">COMEDY</a>
+                        </li>
+                        <li>
+                            <a href="#!">FANTASY</a>
+                        </li>
+                        <li>
+                            <a href="#!">ACTION</a>
+                        </li>
+                        <li>
+                            <a href="#!">MOVIES</a>
+                        </li>
+                        <li>
+                            <a href="#!">HORROR</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">REVIEUW MOVIES</h5>
+                    <div class="row">
+                        <ul class="list-stylized">
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Comedy</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Horror</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Historical</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Romantic</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Love</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Action</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Reviews</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Comedy</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Adventure</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Fantasy</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Romantic</a>
+                            </li>
+                            <li class="d-inline-block ">
+                                <a href="#!">Love</a>
+                            </li>
+                            <li class="d-inline-block ">
+                                <a href="#!">Comedy</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Historical</a>
+                            </li>
+
+                            <li class="d-inline-block ">
+                                <a href="#!">Action</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto">
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">latest movie</h5>
+                    <ul class="list-unstyled">
+                        <li class="latestMovieFooter">
+                            <p></p>
+                        </li>
+                        <li class="latestMovieFooter">
+                            <p></p>
+                        </li>
+                        <li class="latestMovieFooter">
+                            <p></p>
+                        </li>
+                        <li class="latestMovieFooter">
+                            <p></p>
+                        </li>
+                        <li class="latestMovieFooter">
+                            <p></p>
+                        </li>
+                        <li class="latestMovieFooter">
+                            <p></p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 col-lg-3">
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><span class="text-danger">ALLEZ</span><span
+                            class="text-white">CINE!</span></h5>
+                    <div class="img-footer-container row">
+                        <div class="img-footer col-4 col-md-4 col-lg-4">
+                            <img class="footerImage" src="./assets/img/hero.jpg" alt="..."
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="img-footer col-4 col-md-4 col-lg-4">
+                            <img class="footerImage" src="./assets/img/hero.jpg" alt="..."
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="img-footer col-4 col-md-4 col-lg-4">
+                            <img class="footerImage" src="./assets/img/hero.jpg" alt="..."
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="img-footer col-4 col-md-4 col-lg-4">
+                            <img class="footerImage" src="./assets/img/hero.jpg" alt="..."
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="img-footer col-4 col-md-4 col-lg-4">
+                            <img class="footerImage" src="./assets/img/hero.jpg" alt="..."
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="img-footer col-4 col-md-4 col-lg-4">
+                            <img class="footerImage" src="./assets/img/hero.jpg" alt="..."
+                                style="width: 100%; height: auto;">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- Footer Links -->
+
+            <hr>
+
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item reseauxFooter">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item reseauxFooter">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item reseauxFooter">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item reseauxFooter">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item reseauxFooter">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+        </div>
+        <button id="boutonTop" type="button" class="btn btn-dark  rounded-circle p-2 hide-bouton"><i class="fas fa-arrow-up fa-2x text-danger"></i></button>
+    </footer>
+    <!-- Footer -->
+    <!--login with modal-->
+    <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">LOGIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="pseudo-name" class="col-form-label">Pseudo:</label>
+                            <input type="text" class="form-control" id="pseudo-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordLogin" class="col-form-label">password:</label>
+                            <input type="password" class="form-control" id="passwordLogin">
+                        </div>
+                        <div class="form-group">
+                            <label for="stayConnect" class="col-form-label">Stay connected </label>
+                            <input class="mr-5" type="checkbox" id="stayConnect">
+                            <label class="ml-5"> Not account yet?</label>
+                            <button id="backToRegister" type="button" class="btn btn-danger ml-3">Sign UP</button>
+                            <p><a class="text-danger" href="#">forgot password?</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button id="loginModalButton" type="button" class="btn btn-danger">login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- register with modal -->
+    <div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalTitleReg">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="pseudo-name-reg" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control" id="pseudo-name-reg">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRegister" class="col-form-label">password:</label>
+                            <input type="password" class="form-control" id="passwordRegister">
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatRegister" class="col-form-label">comfirm password:</label>
+                            <input type="password" class="form-control" id="repeatRegister">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailRegister" class="col-form-label">Email</label>
+                            <input class="form-control" type="email" id="emailRegister" placeholder="exemple@gmail.com">
+                        </div>
+                        <label class="col-form-label">By signing, you agree with <a class="text-danger" href="#">terms
+                                and
+                                conditions</a></label>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    <button id="signUpRegister" type="button" class="btn btn-danger">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- film details with modal -->
+    <div id='modalContainer'></div>
+    <!-- coockies-->
+    <div id="cookies" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Respect de la vie privée</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>En restant sur le site AllezCine, vous acceptez que nous utilisions des données non sensibles
+                        comme des cookies ou des identifiants électroniques pour afficher des publicités personnalisées,
+                        mesurer le nombre de visiteurs ou encore adapter notre contenu.</p>
+                    <p> Cliquez sur le bouton pour donner votre consentement à ces opérations et profiter d'une
+                        expérience personnalisée. Vous pouvez modifier vos préférences à tout moment en revenant sur ce
+                        site.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="cookiesAccept" type="button" class="btn btn-danger">accepter et fermer</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/4e8921f269.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

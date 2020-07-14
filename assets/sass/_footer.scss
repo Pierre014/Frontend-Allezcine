@@ -1,0 +1,53 @@
+footer{
+    background-color: black;
+    a{
+        color: rgb(155, 155, 155);
+    }
+    h5{
+        color: white;
+    }
+    li{
+        color:rgb(172, 172, 172);
+    }
+    span{
+        font-size: 1.5em;
+    }
+    .img-footer-container{
+        margin: 1em;
+    }
+    .img-footer{
+        padding: 0;
+    }
+}
+.list-stylized{
+    a{
+        color:white;
+    }
+    li{
+        padding: 4px;
+        margin: 2px 1px;
+        background-color:  rgb(48, 47, 47);
+    }
+}
+
+.list-unstyled{
+    margin-bottom: 0px;
+}
+.latestMovieFooter{
+    padding-bottom: 10px;
+}
+.list-inline-item{
+    color:white;
+}
+
+#boutonTop{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+.hide-bouton{
+    visibility: hidden;
+}
+.reseauxFooter:hover{
+    color:#DC3545;
+}
